@@ -10,53 +10,41 @@
 <body>
     <form action="recebe-dados.php" method="post">
         <div>
-            <h1 id="titulo">Formulário para DEVs</h1>
+            <h1 id="titulo">Formulário para Desenvolvedores</h1>
             <p id="subtitulo">Preencha suas informações</p>
         </div>
-        <div class="conteudo">
-            <label>Nome:</label>
-            <input type="text">
-        </div>
         
         <div class="conteudo">
-            <label>Sobrenome:</label>
-            <input type="text">
-        </div>
-        
-        <div class="conteudo">
-            <label>Email:</label>
-            <input type="email">
-        </div>
-        
-       <div class="conteudo">
-            <label>Qual lado você desenvolve?</label>
-            <br>
-            <br>
-            <label>
-                <input type="radio" name="devweb" value="backend">Back-end <br>
-            </label>
-            <label>
-                <input type="radio" name="devweb" value="frontend">Front-end <br>
-            </label>
-            <label>
-                <input type="radio" name="devweb" value="fullstack">Fullstack
-            </label>
+            <label id="text">Nome</label>
+            <input type="text" class="text" placeholder="Digite seu nome" required>
         </div>
 
         <div class="conteudo">
-            <label>Tecnologias Utilizadas:</label>
+            <label id="text">Sobrenome</label>
+            <input type="text" class="text" placeholder="Digite seu sobrenome" required>
+        </div>
+
+        <div class="conteudo">
+            <label id="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="conteudo">
+            <label>Qual área você desenvolve?</label>
             <br>
-            <br>
-            <input type="checkbox">Python
-            <input type="checkbox">C+
-            <input type="checkbox">HTML5
-            <input type="checkbox">CSS3
-            <input type="checkbox">JavaScript
-            <input type="checkbox">Git e GitHub
+            <label id="devweb">
+                <input type="radio" name="devweb" value="backend"> Back-end
+            </label>
+            <label id="devweb">
+                <input type="radio" name="devweb" value="frontend"> Front-end
+            </label>
+            <label id="devweb">
+                <input type="radio" name="devweb" value="fullstack"> Fullstack
+            </label>
         </div>
         
         <div class="conteudo">
-            <label>Cargo</label>
+            <label id="cargo">Cargo</label>
             <select name="cargo" id="cargo">
                 <option value="estagiario">Estagiário</option>
                 <option value="junior">Junior</option>
@@ -66,7 +54,7 @@
         </div>
         
         <div class="conteudo">
-            <label>Gênero</label>
+            <label id="sexo">Gênero</label>
             <select name="sexo" id="sexo">
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>
@@ -74,7 +62,7 @@
         </div>
         
         <div class="conteudo">
-            <label>Estado</label>
+            <label id="estado">Estado</label>
             <select name="estado" id="estado">
                 <option value="RJ">RJ</option>
                 <option value="SP">SP</option>
@@ -85,18 +73,18 @@
         </div>
         
         <div class="conteudo">
-            <label>Data de Nascimento:</label>
-            <input type="date">
+            <label id="nasc">Data de Nascimento:</label>
+            <input type="date" id="nasc">
         </div>
 
         <div class="conteudo">
-            <label>Experiência Pessoal:</label>
-            <textarea name="mensagem" id="msg" cols="30" rows="6"></textarea>
+            <label id="msg">Experiência Pessoal:</label>
+            <textarea name="mensagem" id="msg" cols="50" rows="7" placeholder="Já trabalhou na área?"></textarea>
         </div>
 
         <div class="conteudo">
-            <input type="reset" value="Resetar">
-            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar" class="button">
+            <input type="submit" value="Enviar" class="button">
         </div>
     </form>
 </body>
